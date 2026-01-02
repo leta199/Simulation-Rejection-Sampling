@@ -1,9 +1,7 @@
 # Monte-Carlo-Integration
-Monte Carlo integration allows us to use simulation to make stochastic approximations of functions that do not have closed form solutions when integrated.
+Monte Carlo integration allows us to use simulation to make stochastic approximations of functions that do not have closed form solutions when integrated. I was mind blown to learn that this was a thing!! 
 
-We will use both Monte Carlo and Inverse transform to approximate the area of a circle of radius "r" with area "Y".   
-Radius "r" is distributed on a uniformly on [1,4].
-We will try to find the expected value of "Y" (our area). 
+We will use R to simulate how we can solve this problem: 
 
 This project will cover:
 
