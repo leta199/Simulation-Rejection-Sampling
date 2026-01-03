@@ -1,16 +1,27 @@
 #Monte Carlo Integration- Integration by Simulation-------------------------
 #Defining our target pdf(density function to integrate) --------------------------
+install.packages("ggplot2")
+library(ggplot2)
 
 target_pdf<-function(x){
   (x*exp(-x))/(6*exp(-5))
 }
 
-#Defining porposal pdf (density that we sample from a compare to target)--
+#Defining proposal pdf (density that we sample from a compare to target)--
 proposal_pdf<- function(x){
-  5+ rexp(1, rate = 1)
+  5 + rexp(1, rate = 1)
 }
-#what curve looks like 
-curve(target_pdf(x), from = 5, to =10)
+#Graphing our target probability density function 
+curve(target_pdf(x), from = 5, to =10, 
+      xlab = "Input value",
+      ylab = "Value of output")
+
+rate <- 1
+x<- seq(5,10,0.001)
+plot(x,  dexp(x,rate), lwd = 1)
+
+
+
 
 sim_gamma<-function(){
   set.seed(123)
@@ -25,11 +36,12 @@ sim_gamma<-function(){
     
     if( u <target_pdf(y)/proposal_pdf(y))
       count<- count +1
-    sample_y_9[count]<-y
+    sample_y[count]<-y
     
   }
-  return(sample_y_9)
+  return(sample_y)
 }
 
-hist(sim_gamma_9(), freq = FALSE)
-curve(target_9(x), add = TRUE)
+#Combined 
+hist(sim_gamma(), freq = FALSE)
+curve(target_pdf(x), add = TRUE)
