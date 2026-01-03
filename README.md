@@ -1,4 +1,4 @@
-# Monte-Carlo-Integration
+# REJECTION SAMPLING
 Monte Carlo integration allows us to use simulation to make stochastic approximations of functions that do not have closed form solutions when integrated. I was mind blown to learn that this was a thing!! 
 
 We will use R to simulate how we can solve this problem: 
