@@ -1,4 +1,4 @@
-# REJECTION SAMPLING
+# Rejection Sampling
 
 Also know as the "accept- reject" mehod is a way of generating samples of data from a complex probability function such as gamma functions. Just like we can genearte points from a uniform distribution, using this method: we can generate points from any defined funtions whereby the points follow the probabilistic nature of said funtion. We can then use  use this as synthetic data that followd the compled distribution in: Monte Carlo simulations, fine tuning machine learning models and much more.  
 
