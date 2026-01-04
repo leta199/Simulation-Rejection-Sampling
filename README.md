@@ -63,6 +63,9 @@ target_pdf(x)/proposal_pdf(x) - acts as a upper bound on the probability of acce
 
 Once we have generated 5000 samples we will return `sample_y`.
 
+**Visualisations**
+We will visualise the output from `sim_gamma()` with a histogram and overlay the continuous probability curve over it. Keep in mind freq = FALSE to represent the density of each bin and therefore toal areas of all bins toegther is 1 which is the sum of the sum pf all probabilites of events/ outcomes in a probabilty denisty function. 
+
  ## PROJECT STRUCTURE      
 |[Simulation- Monte Carlo Integration](https://github.com/leta199/Monte-Carlo-Integration/blob/main/Integration%20by%20simulation.r)  
 |├── [Rejection sampling R script](https://github.com/leta199/Rejection-Sampling/blob/main/Rejection%20sampling.r)   
