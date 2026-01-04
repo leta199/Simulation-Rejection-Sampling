@@ -65,11 +65,19 @@ Once we have generated 5000 samples we will return `sample_y`.
 
 **Visualisations**
 We will visualise the output from `sim_gamma()` with a histogram and overlay the continuous probability curve over it. Keep in mind freq = FALSE to represent the density of each bin and therefore toal areas of all bins toegther is 1 which is the sum of the sum pf all probabilites of events/ outcomes in a probabilty denisty function. 
+<img width="1313" height="830" alt="Image" src="https://github.com/user-attachments/assets/6e09ab04-14c9-465c-856a-f4d6cee3b913" />
+
+As we can see the bar chart lines up roughly with our continuous curve of the target probability density function proving that we have kept the original distribution with our 5000 samples.
+
 
  ## PROJECT STRUCTURE      
-|[Simulation- Monte Carlo Integration](https://github.com/leta199/Monte-Carlo-Integration/blob/main/Integration%20by%20simulation.r)  
+|[Simulation- Rejection Sampling](https://github.com/leta199/Monte-Carlo-Integration/blob/main/Integration%20by%20simulation.r)  
 |├── [Rejection sampling R script](https://github.com/leta199/Rejection-Sampling/blob/main/Rejection%20sampling.r)   
 |└──[README](https://github.com/leta199/Simulation-Monte-Carlo-Integration/blob/main/README.md)
-  
+
+## USEFUL RESOURCES 
+The textbook "Probability with applications and R"  by Dr. Wagaman and Dr. Dobrow was very helpful in many of my endevours.
+[Rejection Sampling: Sampling from ‘difficult’ distributions](https://medium.com/@roshmitadey/rejection-sampling-sampling-from-difficult-distributions-dbd17742a919) - was a website that lays down the basics of rejection sampling.
+
 ## AUTHORS   
 [leta199](https://github.com/leta199)  
