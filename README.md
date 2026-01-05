@@ -76,7 +76,7 @@ As we can see the bar chart lines up roughly with our continuous curve of the ta
 |└──[README](https://github.com/leta199/Simulation-Monte-Carlo-Integration/blob/main/README.md)
 
 ## USEFUL RESOURCES 
-The textbook "Probability with applications and R"  by Dr. Wagaman and Dr. Dobrow was very helpful in many of my endevours.
+The textbook "Probability with applications and R"  by Dr. Wagaman and Dr. Dobrow was very helpful in many of my endevours.  
 [Rejection Sampling: Sampling from ‘difficult’ distributions](https://medium.com/@roshmitadey/rejection-sampling-sampling-from-difficult-distributions-dbd17742a919) - was a website that lays down the basics of rejection sampling.
 
 ## AUTHORS   
