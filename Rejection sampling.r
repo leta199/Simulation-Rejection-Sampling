@@ -39,7 +39,7 @@ sim_gamma<-function(){
     #number of total generated samples
     number <- number + 1
     total_sample[number] <- y
-    acceptance_rate <- (5000/ length(total_sample))*100
+    acceptance_rate <- round((5000/ length(total_sample))*100 , digits = 3)
     
     #accept or reject criteria
     if( u < target_pdf(y)/proposal_pdf(y))
@@ -47,10 +47,15 @@ sim_gamma<-function(){
     sample_y[count]<-y
     
   }
-  return(acceptance_rate)
+  text <- "Acceptance rate:"
+  percent <- "%"
+  output<-paste(text, acceptance_rate,percent)
+  print(output)
   
 }
+
 sim_gamma()
+
 #Graphical display of distribution of sample and pdf ------------- 
 hist(sim_gamma(), freq = FALSE,
      main = "Distribution of generated sample",
