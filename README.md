@@ -56,10 +56,11 @@ Is the function we will use for our reject or accept method. We begin by definin
 *While loop*  
 This loop allows for data generation so long as a condition is met. In this case the criteria would be:  
 While the count of values in sample_y is less than 5000:
+- Generate a sample from our proposal `y`.
 - Sample a value from a uniform distribution from 0 to 1 called `u`.
 - Compare the value  `u` to the value of target_pdf(x)/proposal_pdf(x).
-- If u <  target_pdf(x)/proposal_pdf(x) add 1 to the count and add that value to    `sample_y`.
-- 
+- If u <  target_pdf(x)/proposal_pdf(x) add 1 to the count and add that value to  `sample_y`.
+  
 
 target_pdf(x)/proposal_pdf(x) - acts as a upper bound on the probability of acceptance, and if the value of u is greater than it, reject the value as a valid sample. 
 
