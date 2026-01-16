@@ -47,6 +47,7 @@ sim_gamma<-function(){
     sample_y[count]<-y
     
   }
+  
   text <- "Acceptance rate:"
   percent <- "%"
   output<-paste(text,acceptance_rate,percent)
