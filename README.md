@@ -40,7 +40,7 @@ This is a known probability distribution that we can easily sample from e.g in R
 For this target proposal I seleced an exponential distribution with lambda = 1 translated by + 5. 
 
 `proposal_pdf(x)`  
-Function we will use grpahed as: 
+Function we will use, graphed as: 
 <img width="1195" height="838" alt="Image" src="https://github.com/user-attachments/assets/9c51eb61-7bc2-485c-8a84-bdfa6c0b17b3" />
 
 **Rejection Sampling**
