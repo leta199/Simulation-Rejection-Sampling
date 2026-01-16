@@ -49,9 +49,10 @@ Once we have defined the function as number generators we can then use the metho
 `sim_gamma()`   
 Is the function we will use for our reject or accept method. We begin by defining: 
 1) The seed for general reprodicibility.
-2) Number of samples we want to generate as `n`.
+2) Number of samples we want to generate (5000) as `n`.
 3) `sample_y` is the vector containing n many allowable values.
-4) `total_samples` is an empty list that will store all the generated values. 
+4) `total_samples` is an empty list that will store all the generated values.
+5) Number of total sample we generated as `number`. 
 
 *While loop*  
 This loop allows for data generation so long as a condition is met. In this case the criteria would be:  
