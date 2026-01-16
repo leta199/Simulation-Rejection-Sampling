@@ -11,7 +11,7 @@ We will use R to generate data from the following gamma function and overlay the
 This project will cover:
 
 - How to define and graph a target probability density function.
-- How to define proposal probability density function..
+- How to define proposal probability density function.
 
  
 ## HOW IT'S MADE 
