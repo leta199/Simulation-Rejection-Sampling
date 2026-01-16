@@ -27,26 +27,30 @@ sim_gamma<-function(){
   set.seed(123)
   n <-5000
   sample_y<-numeric(n)
+  number <- 0
   count<-0
+  total_sample <-numeric(0)
   while(count<n) {
     
+    #generated sample from proposal 
     y<-proposal_pdf(1)
     #uniform comparison
     u<- runif(1,0,1)
     #number of total generated samples
-    number =+ 1
-    total_sample[number] <- u
-  
+    number <- number + 1
+    total_sample[number] <- y
+    acceptance_rate <- (5000/ length(total_sample))*100
+    
     #accept or reject criteria
     if( u < target_pdf(y)/proposal_pdf(y))
       count<- count +1
     sample_y[count]<-y
     
   }
-  return(total_sample)
+  return(acceptance_rate)
   
 }
-
+sim_gamma()
 #Graphical display of distribution of sample and pdf ------------- 
 hist(sim_gamma(), freq = FALSE,
      main = "Distribution of generated sample",
