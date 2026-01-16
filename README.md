@@ -51,13 +51,15 @@ Is the function we will use for our reject or accept method. We begin by definin
 1) The seed for general reprodicibility.
 2) Number of samples we want to generate as `n`.
 3) `sample_y` is the vector containing n many allowable values.
+4) `total_sample` is an empty list all of our generated samples will go into. 
 
 *While loop*  
 This loop allows for data generation so long as a condition is met. In this case the criteria would be:  
 While the count of values in sample_y is less than 5000:
-- Sample a value from a uniform distribution from 0 to 1 called `u`
-- Compare the value  `u` to the value of target_pdf(x)/proposal_pdf(x)
-- If u <  target_pdf(x)/proposal_pdf(x) add 1 to the count and add that value to    `sample_y`
+- Sample a value from a uniform distribution from 0 to 1 called `u`.
+- Compare the value  `u` to the value of target_pdf(x)/proposal_pdf(x).
+- If u <  target_pdf(x)/proposal_pdf(x) add 1 to the count and add that value to    `sample_y`.
+- 
 
 target_pdf(x)/proposal_pdf(x) - acts as a upper bound on the probability of acceptance, and if the value of u is greater than it, reject the value as a valid sample. 
 
